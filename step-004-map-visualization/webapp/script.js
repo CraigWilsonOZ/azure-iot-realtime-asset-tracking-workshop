@@ -6,8 +6,9 @@
 var map, datasource, popup, dataLayer, hoverLayer, currentTimestamp;
 
 const TSI_FQDN = '<000000-000000-0000-00000.env.timeseries.azure.com>'; // You can find this in the overview of your Time Series Insights resource in the Azure portal
-const AZURE_MAPS_SUBSCRIPTION_KEY = '<Your_Azure_Maps_Key>';
-const TIME_SERIES_ID = '<Your_Time_Series_ID>';
+const AZURE_MAPS_SUBSCRIPTION_KEY = '<Your_Azure_Maps_Key>'; // This is your Map authentication subscription key created at the start of the lab under Authentication
+const TIME_SERIES_ID = '<Your_Time_Series_ID>'; // This is your Device ID located in your IoT Hub under IoT devices
+
 
 window.onload = function () {
     initAuth('Maps Example');  //Initiate auth objects, header, and login modal
